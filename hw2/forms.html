@@ -1,135 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Forms</title>
-</head>
-<body>
-    <header>
-        <h1>Profile edit page</h1>
-    </header>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Basic info</legend>
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms</title>
+    </head>
+    <body>
+        <header>
+            <h1>Profile edit page</h1>
+        </header>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Basic info</legend>
+                <p>
+                    <input type="hidden" name="_token" value="33vMgUpnebyrVyt9UecusU0jaub7wLECJJIZg2Bm">
+                </p>
+                <p>
+                    <label for="id">ID</label>
+                    <input type="text" id="id" name="id" value="725" disabled>
+                </p>
+                <p>
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name">
+                </p>
+                <p>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name">
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </p>
+                <p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="380">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="myemail@placeholder.com">
+                </p>
+                <p>
+                    <input type="checkbox" id="keep_private" name="keep_private" value="1">
+                    <label for="keep_private">Keep my email address private</label>
+                </p>
+                <p>We'll remove your public profile email and use 1978331+username@users.noreply.lacalhost</p>
+                <p>
+                    <label for="dob">DOB</label>
+                    <input type="date" id="dob" name="dob">
+                </p>
+                <p>
+                    <label for="blog_url">Blog url</label>
+                    <input type="url" id="blog_url" name="blog_url" placeholder="http://">
+                </p>
+                <p>
+                    <label for="about">About me</label>
+                    <textarea id="about" name="about" rows="7" cols="30"></textarea>
+                </p>
+                <p>
+                    <label for="profile_picture">Profile picture</label>
+                    <input type="file" id="profile_picture" name="profile_picture">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Professional info</legend>
+                <p>
+                    <label for="study_desire">Desire to study</label>
+                    <input type="range" id="study_desire" name="study_desire" value="80">
+                </p>
+                <p>
+                    <label for="experience">Experience</label>
+                    <input type="number" id="experience" name="experience" min="0" value="1">
+                    years
+                </p>
+                <p>Development Experience</p>
+                <p>
+                    <input type="radio" id="learning_program" name="dev_experience" value="learning_program">
+                    <label for="learning_program">Learning to Program</label>
+                </p>
+                <p>
+                    <input type="radio" id="junior_developer" name="dev_experience" value="junior_developer" checked>
+                    <label for="junior_developer">Junior Developer</label>
+                </p>
+                <p>
+                    <input type="radio" id="mid_level_developer" name="dev_experience" value="mid_level_developer">
+                    <label for="mid_level_developer">Mid-Level Developer</label>
+                </p>
+                <p>
+                    <input type="radio" id="senior_developer" name="dev_experience" value="senior_developer">
+                    <label for="senior_developer">Senior Developer</label>
+                </p>
+                <p>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="" disabled selected>- Choose Your Country -</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="spain">Spain</option>
+                    </select>
+                </p>
+                <p>Skills</p>
+                <p>
+                    <input type="checkbox" id="html" name="skills[]" value="html">
+                    <label for="html">HTML</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="css" name="skills[]" value="css">
+                    <label for="css">CSS</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="js" name="skills[]" value="js">
+                    <label for="js">JavaScript</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="r" name="skills[]" value="r">
+                    <label for="r">R</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="scala" name="skills[]" value="scala">
+                    <label for="scala">Scala</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="haskell" name="skills[]" value="haskell">
+                    <label for="haskell">Haskell</label>
+                </p>
+            </fieldset>
             <p>
-                <input type="hidden" name="_token" value="33vMgUpnebyrVyt9UecusU0jaub7wLECJJIZg2Bm">
+                <button type="reset">Cancel</button>
+                <button type="submit">Submit</button>
             </p>
-            <p>
-                <label for="id">ID</label>
-                <input type="text" id="id" name="id" value="725" disabled>
-            </p>
-            <p>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name">
-            </p>
-            <p>
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name">
-            </p>
-            <p>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
-            </p>
-            <p>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="380">
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="myemail@placeholder.com">
-            </p>
-            <p>
-                <input type="checkbox" id="keep_private" name="keep_private" value="1">
-                <label for="keep_private">Keep my email address private</label>
-            </p>
-            <p>We'll remove your public profile email and use 1978331+username@users.noreply.lacalhost</p>
-            <p>
-                <label for="dob">DOB</label>
-                <input type="date" id="dob" name="dob">
-            </p>
-            <p>
-                <label for="blog_url">Blog url</label>
-                <input type="url" id="blog_url" name="blog_url" placeholder="http://">
-            </p>
-            <p>
-                <label for="about">About me</label>
-                <textarea id="about" name="about" rows="7" cols="30"></textarea>
-            </p>
-            <p>
-                <label for="profile_picture">Profile picture</label>
-                <input type="file" id="profile_picture" name="profile_picture">
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Professional info</legend>
-            <p>
-                <label for="study_desire">Desire to study</label>
-                <input type="range" id="study_desire" name="study_desire" value="80">
-            </p>
-            <p>
-                <label for="experience">Experience</label>
-                <input type="number" id="experience" name="experience" min="0" value="1">
-                years
-            </p>
-            <p>Development Experience</p>
-            <p>
-                <input type="radio" id="learning_program" name="dev_experience" value="learning_program">
-                <label for="learning_program">Learning to Program</label>
-            </p>
-            <p>
-                <input type="radio" id="junior_developer" name="dev_experience" value="junior_developer" checked>
-                <label for="junior_developer">Junior Developer</label>
-            </p>
-            <p>
-                <input type="radio" id="mid_level_developer" name="dev_experience" value="mid_level_developer">
-                <label for="mid_level_developer">Mid-Level Developer</label>
-            </p>
-            <p>
-                <input type="radio" id="senior_developer" name="dev_experience" value="senior_developer">
-                <label for="senior_developer">Senior Developer</label>
-            </p>
-            <p>
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="" disabled selected>- Choose Your Country -</option>
-                    <option value="ukraine">Ukraine</option>
-                    <option value="thailand">Thailand</option>
-                    <option value="spain">Spain</option>
-                </select>
-            </p>
-            <p>Skills</p>
-            <p>
-                <input type="checkbox" id="html" name="skills[]" value="html">
-                <label for="html">HTML</label>
-            </p>
-            <p>
-                <input type="checkbox" id="css" name="skills[]" value="css">
-                <label for="css">CSS</label>
-            </p>
-            <p>
-                <input type="checkbox" id="js" name="skills[]" value="js">
-                <label for="js">JavaScript</label>
-            </p>
-            <p>
-                <input type="checkbox" id="r" name="skills[]" value="r">
-                <label for="r">R</label>
-            </p>
-            <p>
-                <input type="checkbox" id="scala" name="skills[]" value="scala">
-                <label for="scala">Scala</label>
-            </p>
-            <p>
-                <input type="checkbox" id="haskell" name="skills[]" value="haskell">
-                <label for="haskell">Haskell</label>
-            </p>
-        </fieldset>
-        <p>
-            <button type="reset">Cancel</button>
-            <button type="submit">Submit</button>
-        </p>
-    </form>
-    <footer>
-        <p>© Copyright, 2018</p>
-    </footer>
-</body>
+        </form>
+        <footer>
+            <p>© Copyright, 2018</p>
+        </footer>
+    </body>
 </html>
