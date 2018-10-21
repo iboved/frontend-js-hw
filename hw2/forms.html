@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Forms</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
@@ -72,22 +73,24 @@
                     years
                 </p>
                 <p>Development Experience</p>
-                <p>
-                    <input type="radio" id="learningProgram" name="dev_experience" value="learning_program">
-                    <label for="learningProgram">Learning to Program</label>
-                </p>
-                <p>
-                    <input type="radio" id="juniorDeveloper" name="dev_experience" value="junior_developer" checked>
-                    <label for="juniorDeveloper">Junior Developer</label>
-                </p>
-                <p>
-                    <input type="radio" id="midLevelDeveloper" name="dev_experience" value="mid_level_developer">
-                    <label for="midLevelDeveloper">Mid-Level Developer</label>
-                </p>
-                <p>
-                    <input type="radio" id="seniorDeveloper" name="dev_experience" value="senior_developer">
-                    <label for="seniorDeveloper">Senior Developer</label>
-                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <input type="radio" id="learningProgram" name="dev_experience" value="learning_program">
+                        <label for="learningProgram">Learning to Program</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="juniorDeveloper" name="dev_experience" value="junior_developer" checked>
+                        <label for="juniorDeveloper">Junior Developer</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="midLevelDeveloper" name="dev_experience" value="mid_level_developer">
+                        <label for="midLevelDeveloper">Mid-Level Developer</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="seniorDeveloper" name="dev_experience" value="senior_developer">
+                        <label for="seniorDeveloper">Senior Developer</label>
+                    </li>
+                </ul>
                 <p>
                     <label for="country">Country</label>
                     <select id="country" name="country">
@@ -98,30 +101,32 @@
                     </select>
                 </p>
                 <p>Skills</p>
-                <p>
-                    <input type="checkbox" id="html" name="skills[]" value="html">
-                    <label for="html">HTML</label>
-                </p>
-                <p>
-                    <input type="checkbox" id="css" name="skills[]" value="css">
-                    <label for="css">CSS</label>
-                </p>
-                <p>
-                    <input type="checkbox" id="js" name="skills[]" value="js">
-                    <label for="js">JavaScript</label>
-                </p>
-                <p>
-                    <input type="checkbox" id="r" name="skills[]" value="r">
-                    <label for="r">R</label>
-                </p>
-                <p>
-                    <input type="checkbox" id="scala" name="skills[]" value="scala">
-                    <label for="scala">Scala</label>
-                </p>
-                <p>
-                    <input type="checkbox" id="haskell" name="skills[]" value="haskell">
-                    <label for="haskell">Haskell</label>
-                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <input type="checkbox" id="html" name="skills[]" value="html">
+                        <label for="html">HTML</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="css" name="skills[]" value="css">
+                        <label for="css">CSS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="js" name="skills[]" value="js">
+                        <label for="js">JavaScript</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="r" name="skills[]" value="r">
+                        <label for="r">R</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="scala" name="skills[]" value="scala">
+                        <label for="scala">Scala</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="haskell" name="skills[]" value="haskell">
+                        <label for="haskell">Haskell</label>
+                    </li>
+                </ul>
             </fieldset>
             <p>
                 <button type="reset">Cancel</button>
