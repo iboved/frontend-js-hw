@@ -1,0 +1,59 @@
+.main-header {
+    height: 76px;
+    background-image: linear-gradient(to left, #bf1e2e, #f1592a);
+    color: #ffffff;
+    overflow: hidden;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo {
+    width: 189px;
+    height: 70px;
+    margin: 3px 50px 3px 3px;
+    float: left;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+.main-menu {
+    float: left;
+    text-transform: uppercase;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+}
+.main-menu li {
+    list-style: none;
+    display: inline-block;
+}
+.main-menu li.active {
+    height: 3px;
+    background-color: #ffffff;
+}
+.main-menu li a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 32px 11px;
+    font-size: 12px;
+}
+.main-menu li a:hover {
+    background: #ffffff;
+    color: #2a2a2a;
+}
+.language-switch {
+    float: right;
+    text-transform: uppercase;
+    margin: 29px 5px;
+}
+.language-switch a {
+    color: #ffffff;
+    font-size: 12px;
+}
