@@ -57,3 +57,7 @@ a {
     color: #ffffff;
     font-size: 12px;
 }
+.carousel img {
+    height: auto;
+    width: 100%;
+}
