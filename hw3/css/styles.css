@@ -68,3 +68,38 @@ a {
     height: auto;
     width: 100%;
 }
+.left-nav {
+    margin-top: 35px;
+}
+.left-nav a {
+    color: #363a3b;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 38px;
+}
+.left-nav a:hover {
+    color: #df4a2b;
+}
+.left-nav li {
+   list-style: none;
+   padding-left: 42px;
+}
+.left-nav-list {
+    padding: 0;
+    margin: 0;
+}
+.icon-camera {
+    background: url(../images/icon-camera.png) 0 4px no-repeat;
+}
+.icon-video {
+    background: url(../images/icon-video.png) 0 4px no-repeat;
+}
+.icon-care {
+    background: url(../images/icon-care.png) 0 4px no-repeat;
+}
+.icon-partners {
+    background: url(../images/icon-partners.png) 0 4px no-repeat;
+}
+.icon-chat {
+    background: url(../images/icon-chat.png) 0 4px no-repeat;
+}
