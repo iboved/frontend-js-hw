@@ -1,0 +1,95 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+body, html {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.main-header {
+  height: 90vh;
+  background: url(../images/rectangle-3.svg) no-repeat bottom;
+  background-size: cover;
+}
+.main-header .main-nav {
+  height: 15%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.main-nav .logo {
+  width: 121px;
+  height: 45px;
+  overflow: hidden;
+  font-size: 0;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.main-nav-list li {
+  margin: 0 1rem 0 1rem;
+}
+.main-header .main-nav-list li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.main-header .main-nav-list li a:hover{
+  text-decoration-line: line-through;
+}
+.cover {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  width: 50%;
+}
+.cover-heading {
+  font-size: 5rem;
+  width: 60%;
+  margin: 4rem 0 0 0;
+}
+.cover-description {
+  font-size: 1.6rem;
+  width: 60%;
+}
+.cover-btn {
+  border: 0.1rem solid transparent;
+  align-self: center;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+  border-radius: 2.5rem;
+  font-size: 1.4rem;
+  color: #e83631;
+  margin-top: 5rem;
+  background-color: #ffffff;
+  margin-left: 3rem;
+}
+.cover-btn:hover {
+  cursor: pointer;
+}
+.cover-btn:focus{
+  outline: none;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.8);
+}
+.image-column {
+  display: flex;
+  flex-direction: column;
+}
+.image-column img {
+  max-width: 70%;
+  height: auto;
+}
