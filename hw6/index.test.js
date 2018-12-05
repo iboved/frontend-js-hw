@@ -57,7 +57,32 @@ test('test_string', () => {
 });
 
 test('test_numbers', () => {
-    expect().toEqual();
+    expect(Number.isFinite(5)).toEqual(true);
+    expect(Number.isFinite('5')).toEqual(false);
+    expect(Number.isInteger(0.1)).toEqual(false);
+    expect(Number.isInteger(10)).toEqual(true);
+    expect(Number.isInteger('10')).toEqual(false);
+    expect(Number.isNaN(NaN)).toEqual(true);
+    expect(Number.isNaN(0 / 0)).toEqual(true);
+    expect(Number.isNaN(15)).toEqual(false);
+    expect(Number.isNaN('15')).toEqual(false);
+    expect(Number.isNaN('NaN')).toEqual(false);
+    expect(Number.isNaN(null)).toEqual(false);
+    expect(Number.isSafeInteger(3)).toEqual(true);
+    expect(Number.isSafeInteger('3')).toEqual(false);
+    expect(Number.parseFloat('10')).toEqual(10);
+    expect(Number.parseFloat('10.5')).toEqual(10.5);
+    expect(Number.parseInt('10')).toEqual(10);
+    expect(Number.parseInt('10.5')).toEqual(10);
+    expect((43.1234).toExponential()).toEqual('4.31234e+1');
+    expect((43.1234).toExponential(2)).toEqual('4.31e+1');
+    expect((85.6789).toFixed()).toEqual('86');
+    expect((85.6789).toFixed(1)).toEqual('85.7');
+    expect((85.6789).toFixed(6)).toEqual('85.678900');
+    expect((85.6789).toPrecision()).toEqual('85.6789');
+    expect((85.6789).toPrecision(3)).toEqual('85.7');
+    expect((789.5).toString()).toEqual('789.5');
+    expect((7 + 3).valueOf()).toEqual(10);
 });
 
 test('test_arrays', () => {
