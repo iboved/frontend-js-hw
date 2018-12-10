@@ -165,7 +165,36 @@ test('test_arrays', () => {
 });
 
 test('test_compare_operators', () => {
-    expect().toEqual();
+    expect(5 > 5).toEqual(false);
+    expect(5 > '5').toEqual(false);
+    expect(5 > 7).toEqual(false);
+    expect(7 > 5).toEqual(true);
+    expect(7 > '5').toEqual(true);
+    expect(5 < 5).toEqual(false);
+    expect(5 < '5').toEqual(false);
+    expect(5 < 7).toEqual(true);
+    expect(7 < 5).toEqual(false);
+    expect(5 < '7').toEqual(true);
+    expect(5 >= 5).toEqual(true);
+    expect(5 >= '5').toEqual(true);
+    expect(5 >= 7).toEqual(false);
+    expect(7 >= 5).toEqual(true);
+    expect(7 >= '5').toEqual(true);
+    expect(5 <= 5).toEqual(true);
+    expect(5 <= '5').toEqual(true);
+    expect(5 <= 7).toEqual(true);
+    expect(7 <= 5).toEqual(false);
+    expect('7' >= 5).toEqual(true);
+    expect('5' < '15').toEqual(false);
+    expect('15' < '5').toEqual(true);
+    expect('ab' < 'cd').toEqual(true);
+    expect('a' > 'A').toEqual(true);
+    expect('one' > 'hello').toEqual(true);
+    expect('Glow' > 'Glee').toEqual(true);
+    expect('Bee' > 'Be').toEqual(true);
+    expect(false < true).toEqual(true);
+    expect(true < false).toEqual(false);
+    expect(false < 1).toEqual(true);
 });
 
 test('test_equality_comparison_algorithm', () => {
