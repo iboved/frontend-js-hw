@@ -54,6 +54,7 @@ test('test_string', () => {
     expect('   Vova Gavrylov   '.trim()).toEqual('Vova Gavrylov');
     expect('   Vova Gavrylov   '.trimRight()).toEqual('   Vova Gavrylov');
     expect('   Vova Gavrylov   '.trimLeft()).toEqual('Vova Gavrylov   ');
+    expect(1 + '5').toEqual('15');
 });
 
 test('test_numbers', () => {
@@ -198,5 +199,40 @@ test('test_compare_operators', () => {
 });
 
 test('test_equality_comparison_algorithm', () => {
-    expect().toEqual();
+    expect(5 == 5).toEqual(true);
+    expect(5 === 5).toEqual(true);
+    expect(5 == '5').toEqual(true);
+    expect(5 === '5').toEqual(false);
+    expect(5 == 7).toEqual(false);
+    expect(5 === 7).toEqual(false);
+    expect(5 != 7).toEqual(true);
+    expect(5 !== 7).toEqual(true);
+    expect(5 != '5').toEqual(false);
+    expect(5 !== '5').toEqual(true);
+    expect(1 == true).toEqual(true);
+    expect(1 === true).toEqual(false);
+    expect(2 == true).toEqual(false);
+    expect(0 == false).toEqual(true);
+    expect(0 === false).toEqual(false);
+    expect('false' == false).toEqual(false);
+    expect(NaN == NaN).toEqual(false);
+    expect(NaN === NaN).toEqual(false);
+    expect(NaN !== NaN).toEqual(true);
+    expect(NaN != NaN).toEqual(true);
+    expect(undefined == undefined).toEqual(true);
+    expect(undefined === undefined).toEqual(true);
+    expect(null == null).toEqual(true);
+    expect(null === null).toEqual(true);
+    expect(null == 0).toEqual(false);
+    expect(null === 0).toEqual(false);
+    expect(NaN == undefined).toEqual(false);
+    expect(NaN === undefined).toEqual(false);
+    expect(NaN == null).toEqual(false);
+    expect(NaN === null).toEqual(false);
+    expect(undefined == null).toEqual(true);
+    expect(undefined === null).toEqual(false);
+    expect('' == 0).toEqual(true);
+    expect('' === 0).toEqual(false);
+    expect('' == 1).toEqual(false);
+    expect('abc' == NaN).toEqual(false);
 });
