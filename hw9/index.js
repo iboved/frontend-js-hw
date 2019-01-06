@@ -1,7 +1,7 @@
 'use strict';
 
 (() => {
-/*    function getPostsCallback(callback) {
+    function getPostsCallback(callback) {
         let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
@@ -51,7 +51,7 @@
 
     getPostsAsync().then((response) => {
         console.log(JSON.parse(response));
-    });*/
+    });
 
     ///////////////////////////////////
 
